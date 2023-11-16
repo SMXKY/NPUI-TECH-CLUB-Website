@@ -1,0 +1,41 @@
+.stand-alone-sign-in-form{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0,0.6);
+    padding: 2rem ;
+}
+
+.sign-div{
+    display: flex ;
+    justify-content: center ;
+    padding-top: 4rem ;
+    width: 100% ;
+}
+
+.form-header p{
+    text-align: center ;
+    font-weight: 600 ;
+    font-size: 2rem ;
+    color: var(--section-color);
+}
+
+.form-entry a{
+    display: inline ;
+    text-align: right ;
+    text-decoration: none ;
+    color: var(--call-to-action-color) ;
+}
+
+.log-unique{
+    height: 100vh ;
+}
+
+@media(max-width: 756px){
+    .sign-div{
+        width: 100% ;
+        padding: 1rem ;
+    }
+
+    .stand-alone-sign-in-form{
+        box-shadow: 0px 0px 12px rgba(0, 0, 0,0.0);
+        padding: 0rem ;
+    }
+}

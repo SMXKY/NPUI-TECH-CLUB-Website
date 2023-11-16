@@ -1,0 +1,156 @@
+.pop-up{
+    backdrop-filter: blur(15px) ;
+    position: absolute ;
+    left: 0 ;
+    right: 0 ;
+    top: 0 ;
+    z-index: 101 ;
+    padding-top: 1rem ;
+    bottom: 0px ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    display: none ;
+}
+
+.log-form{
+    background-color: var(--main-color);
+    display: none ;
+    border-radius: 1rem ;
+    padding: 3rem 2rem ;
+    padding-bottom: 4rem ;
+}
+
+.form-entry a{
+    display: block ;
+    text-align: right ;
+    text-decoration: none ;
+    color: var(--call-to-action-color) ;
+}
+
+.form-link:hover{
+    color: white ;
+}
+
+.on-pop-up{
+    display: flex ;
+}
+
+.on-form{
+    display: block ;
+}
+
+.form-entry label{
+    display: block ;
+}
+
+.form-entry input{
+    margin-left: 2.0rem ;
+    margin-top: 0.5rem ;
+    border: solid var(--call-to-action-color)  1px ;
+    background-color: transparent ;
+    padding: 0.8rem ;
+    width: 40vw ;
+    font-size: 1.1rem ;
+    border-radius: 0.9rem ;
+}
+
+.form-entry input:focus{
+    outline: none ;
+}
+
+.form-entry{
+    margin-top: 1.5rem ;
+}
+
+.close-button{
+    background: none ;
+    border: none ;
+    cursor: pointer ;
+    position: fixed ;
+    right: 1.5rem ;
+    top: 1.5rem ;
+}
+
+.close-button img{
+    width: 1.5rem ;
+    transition: 0.6s ease-in-out;
+}
+
+.close-button img:hover{
+    transform: translateY(0px) rotate(360deg) ;
+    transition: 0.8s ease-in-out;
+}
+
+.join-form-button{
+    margin-left: 2rem ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    width: 40vw ;
+    padding: 0.8rem 0rem ;
+}
+
+.switch-to-login{
+    border: none ;
+    background: none ;
+    cursor: pointer ;
+    color: var(--call-to-action-color) ;
+    font-size: 1rem ;
+    display: inline ;
+}
+
+.switch-to-login:hover{
+    color: white ;
+}
+
+.select-stack-button{
+    background-color: transparent ;
+    margin-top: 0.5rem ;
+    padding: 0.5rem 8rem 0.5rem 0rem ;
+    border-color: var(--call-to-action-color) ;
+    cursor: pointer ;
+    font-size: 1.1rem ;
+    margin-left: 2.0rem ;
+    border-radius: 0.5rem ;
+}
+
+.select-stack-button:focus{
+    border-color: var(--call-to-action-color);
+}
+
+.select-stack-button:active{
+    border-color: var(--call-to-action-color);
+}
+
+.select-stack-button option{
+    border-color: var(--call-to-action-color);
+    background-color: var(--main-color) ;
+    border: none ;
+}
+
+@media(max-width: 832px){
+    .form-entry input, .join-form-button, .select-stack-button{
+        width: 85vw ;
+        margin-left: 0rem;
+    }    
+    
+    .select-stack-button{
+        padding-right: 2rem ;
+    }
+
+    .log-form{
+        padding: 3rem 1rem ;
+    }
+
+    .close-button{
+        right: 3rem ;
+        top: 3rem ;
+        z-index: 300 ;
+    }
+
+    .pop-up{
+        padding-top: 1rem ;
+
+    }
+}

@@ -1,0 +1,128 @@
+.call-to-action{
+    padding: 10rem 6rem 10rem 6rem ;
+    background-image: url(../images-and-icons/background2.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    position: relative;
+    height: 100vh ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+}
+
+.call-to-action p, .call-to-action button{
+    z-index: 50 ;
+}
+.call-to-action::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 50%, rgba(0,146,176, 0.5));
+
+}
+
+.cta-header, .cta-content, .cta-access{
+    display: flex ;
+    justify-content: center ;
+}
+
+.cta-header p{
+    font-weight: bold ;
+    font-size: 5rem ;
+    color: var(--section-color) ;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cta-content p{
+    font-size: 1.8rem ;
+    text-align: center ;
+    margin-top: 2rem ;
+    text-shadow: 5px 6px 4px rgba(0, 0, 0, 0.5);
+    width: 75% ;
+}
+
+.cta-access{
+    margin-top: 2rem ;
+    display: flex ;
+    align-items: center ;
+}
+
+.login-edit{
+    border: solid var(--call-to-action-color) 1px ;
+    padding: 0.6rem 1.6rem ;
+    border-radius: 0.8rem ;
+}
+
+@media(max-width: 868px ){
+    .call-to-action{
+        padding: 1rem 2rem 0rem 1rem ;
+        align-items: center ;
+        justify-content: center ;
+    }
+
+    .cta-header p{
+        text-align: center ;
+    }
+
+    .cta-header p{
+        font-size: 4rem ;
+    }
+
+    .cta-content p{
+        font-size: 1.3rem ;
+    }
+
+    .cta-content{
+        padding: 0rem ;
+    }
+
+    .cta-content p{
+        font-size: 1.8rem ;
+        width: 100% ;
+        text-align: center ;
+    }
+}
+
+@media(max-width: 668px ){
+    .cta-header p{
+        font-size: 3rem ;
+    }
+
+    .cta-content p{
+        font-size: 1rem ;
+    }
+}
+
+@media(max-width: 465px ){
+    .cta-header p{
+        font-size: 2rem ;
+    }
+}
+
+@media(max-width: 330px ){
+    .cta-header p{
+        font-size: 1.5rem ;
+    }
+}
+
+@media(max-width: 273px ){
+    .cta-header p{
+        font-size: 1.2rem ;
+    }
+    .cta-content p{
+        font-size: 0.8rem ;
+    }
+}
+
+@media(max-width: 227px ){
+    .cta-header p{
+        font-size: 1rem ;
+    }
+
+    .cta-content p{
+        font-size: 0.8rem ;
+    }
+}

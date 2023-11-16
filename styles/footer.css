@@ -1,0 +1,90 @@
+footer{
+    display: flex ;
+    justify-content: space-between ;
+    padding: 2rem 8rem ;
+    margin-top: 8rem ;
+    align-items: center ;
+} 
+
+.left-footer p{
+    font-size: 3rem ;
+    font-weight: bold ;
+}
+
+.right-footer{
+    font-size: 2rem ;
+    font-weight: bold ;
+}
+
+.club-contacts, .support-buttons{
+    display: flex ;
+    justify-content: space-between ;
+    padding-right: 1rem ;
+    margin-top: 2rem ;
+}
+
+.club-contacts i{
+    font-size: 2rem ;
+}
+
+.club-contacts i:hover{
+    opacity: 0.8 ;
+}
+
+.contact-btn{
+    margin-right: 3rem ;
+    font-size: 1rem ;
+    padding: 0.6rem 2rem ;
+    font-weight: 500 ;
+}
+
+@media(max-width: 1041px ){
+    footer{
+        flex-direction: column ;
+    } 
+
+    .right-footer{
+        margin-top: 2rem ;
+        padding: 2rem 1rem ;
+    }
+}
+
+@media(max-width: 549px ){
+    footer p{
+        width: 100% ;
+        justify-content: start ;
+        align-items: start ;
+    }
+
+    .left-footer p{
+        font-size: 2rem ;
+        font-weight: bold ;
+    }
+
+    footer{
+        padding: 0rem ;
+        justify-content: start ;
+        align-items: start ;
+    }
+
+    .left-footer{
+        padding-left: 1rem ;
+    }
+}
+
+@media(max-width: 420px){ 
+    .right-footer p{
+        width: 90% ;
+    }
+
+    .right-footer{
+        width: 100% ;
+    }
+}
+
+@media(max-width: 353px){ 
+    .support-buttons button{
+        padding: 0.6rem 1rem ;
+        margin-right: 0.2rem ;
+    }
+}
