@@ -198,6 +198,14 @@
     .profile-and-notification button img{
         width: 1.5rem ;
     }
+
+    .logo-img{
+        width: 1.5rem ;
+    }
+
+    .top-nav-bar, .mobile-search-nav{
+        padding: 0.5rem 1rem ;
+    }
 }
 
 @media(max-width: 448px){
