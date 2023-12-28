@@ -1,0 +1,15 @@
+:root{
+    --alt-color: rgb(110,110,110) ;
+    --call-to-action: rgb(12,140,233) ;
+    --nav-backgroung-color: rgb(56,56,56) ;
+    --button-color: rgb(89,87,87) ;
+}
+
+*{
+    padding: 0px ;
+    margin: 0px ;
+    box-sizing: border-box ;
+    transition: 0.15s ease-in-out ;
+    color: white ;
+    font-family: roboto, arial ;
+}

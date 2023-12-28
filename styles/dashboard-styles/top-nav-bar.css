@@ -1,0 +1,315 @@
+.logo-img{
+    width: 3rem ;
+}
+
+.top-nav-bar{
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    padding: 1rem 2rem ;
+    position: fixed ;
+    top: 0px ;
+    left: 0px ;
+    right: 0px ;
+    background-color: var(--nav-backgroung-color);
+    z-index: 100 ;
+}
+
+.search-bar{
+    display: flex ;
+    align-items: center ;
+    margin-right: 2rem ;
+}
+
+.search-bar input{
+    background: none ;
+    color: white ;
+    border: none ;
+    font-size: 0.8rem ;
+    padding: 0rem 1rem ;
+    height: 2rem ;
+    border: solid var(--alt-color) 1px ;
+    border-top-left-radius: 0.5rem ;
+    border-bottom-left-radius: 0.5rem ;
+    /*border-right: none ;*/
+}
+
+.search-bar input:focus{
+    outline: none ;
+    border: solid var(--call-to-action) 1px ;
+}
+
+.search-bar input::placeholder{
+    color: var(--alt-color) ;
+}
+
+.search-bar button img{
+    width: 0.85rem ;
+}
+
+.search-bar button{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    padding: 0rem 1rem;
+    border: solid var(--button-color) ;
+    background-color: var(--button-color);
+    cursor: pointer ;
+    border-top-right-radius: 0.5rem ;
+    border-bottom-right-radius: 0.5rem ;
+    height: 2rem ;
+}
+
+.right-div{
+    display: flex ;
+    align-items: center ;
+}
+
+.profile-and-notification{
+    display: flex ;
+    align-items: center ;
+}
+
+.profile-and-notification button img{
+    width: 1.8rem ;
+}
+
+.profile-and-notification button{
+    background: none ;
+    border: none ;
+    margin-right: 2rem ;
+    cursor: pointer ;
+    position: relative ;
+    display: flex ;
+    justify-content: center ;
+}
+
+.notification-alert{
+    height: 0.75rem ;
+    width: 0.75rem ;
+    border-radius: 50% ;
+    position: absolute ;
+    background-color: rgb(214,25,25) ;
+    top: 0.2rem ;
+    right: 0.1rem ;
+    border: solid var(--nav-backgroung-color) 2px ;
+}
+
+.tool-tip{
+    background-color: var(--nav-backgroung-color);
+    color: white ;
+    padding: 0.4rem ;
+    position: absolute ;
+    font-size: 0.7rem ;
+    bottom: -28px ;
+    box-shadow: 0px 0px 6px rgb(255, 255, 255, 0.15);
+    opacity: 0 ;
+}
+
+.profile-and-notification button:hover .tool-tip{
+    opacity: 1 ;
+}
+
+.user-profile{
+    display: flex ;
+    align-items: center ;
+    border: solid var(--alt-color) 1px ;
+    padding: 0rem 2rem ;
+    height: 2rem ;
+    border-radius: 0.5rem ;
+    cursor: pointer ;
+    position: relative ;
+    justify-content: center ;
+}
+
+.search-bar button:hover{
+    border-radius: none ;
+}
+
+.user-profile:hover{
+    box-shadow: 0px 0px 6px rgb(255, 255, 255, 0.15) ;
+}
+
+.profile-and-notification button:hover .notification-alert{
+    box-shadow: 0px 0px 10px rgb(214,25,25, 1);
+}
+
+.user-profile img{
+    width: 1.3rem ;
+    height: 1.3rem ;
+    border-radius: 50% ;
+}
+
+.user-profile p{
+    font-size: 0.8rem ;
+    margin-right: 1.5rem ;
+}
+
+.profile-img-div{
+    display: flex ;
+    justify-content: center ;
+    position: relative ;
+    margin-right: 1.5rem ;
+}
+
+.profile-img-div:hover .tool-tip{
+    opacity: 1 ;
+}
+
+@media(max-width: 662px){
+    .tool-tip{
+        display: none ;
+    }
+
+    .user-profile{
+        border: none ;
+        padding: 0px ;
+    }
+
+    .user-profile p{ 
+        display: none ;
+    }
+
+    .drop-profile{
+        display: none ;
+    }
+
+    .profile-img-div img{
+        height: 2rem ;
+        width: 2rem ;
+    }
+
+    .profile-img-div{
+        margin-right: 0px ;
+    }
+
+    .profile-and-notification button{
+        margin-right: 1rem ;
+    }
+
+    .search-bar{
+        margin-right: 1rem ;
+    }
+
+    .logo-img{
+        width: 2rem ;
+    }
+
+    .profile-and-notification button img{
+        width: 1.5rem ;
+    }
+}
+
+@media(max-width: 448px){
+    .search-bar input{
+        display: none ;
+    }
+
+    .search-bar{
+        padding: 0px ;
+    }
+
+    .search-bar button{
+        background: none ;
+        border: none ;
+        padding: 0px ;
+    }
+
+    .search-bar button img{
+        height: 1.2rem ;
+        width: 1.2rem ;
+    }
+}
+
+@media(max-width: 283px){
+    .top-nav-bar, .mobile-search-nav{
+        padding: 0.5rem 1rem ;
+    }
+
+    .search-bar button img{
+        height: 1.1rem ;
+        width: 1.1rem ;
+    }
+
+    .logo-img{
+        width: 1.5rem ;
+    }
+
+    .profile-img-div img{
+        height: 1.6rem ;
+        width: 1.6rem ;
+    }
+
+    .profile-and-notification button{
+        margin-right: 0.5rem ;
+    }
+
+    .search-bar{
+        margin-right: 0.5rem ;
+    }
+}
+
+
+.search-overlay{
+    position: fixed ;
+    z-index: 101 ;
+    top: 0px ;
+    left: 0px ;
+    right: 0px ;
+    bottom: 0px ;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    display: none ;
+}
+
+.on-overlay{
+    display: block ;
+}
+
+.mobile-search-nav{
+    position: fixed ;
+    left: 0px ;
+    right: 0px ;
+    top: 0px ;
+    background-color: var(--nav-backgroung-color) ;
+    padding: 1rem 1rem ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+}
+
+.mobile-back-button img{
+    width: 1.5rem ;
+}
+
+.mobile-back-button{
+    background: none ;
+    border: none ;
+}
+
+.mobile-search-bar{
+    border: solid var(--alt-color) 1px ;
+    padding: 0.5rem 1rem ;
+    border-radius: 2rem ;
+    display: flex ;
+    align-items: center ;
+}
+
+.mobile-search-bar input{
+    background: none ;
+    border: none ;
+    font-size: 1rem ;
+    width: 65vw ;
+}
+
+.mobile-search-bar input:focus{
+    outline: none ;
+}
+
+.mobile-search-bar button img{
+    width: 1.2rem ;
+}
+
+.mobile-search-bar button{
+    background: none ;
+    border: none ;
+}

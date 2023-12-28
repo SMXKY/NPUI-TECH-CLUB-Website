@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/dashboard-styles/general.css">
+    <link rel="shortcut icon" href="images-and-icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/dashboard-styles/top-nav-bar.css">
+</head>
+<body>
+    <nav class="top-nav-bar">
+        <img src="images-and-icons/club-logo.png" alt="club-logo" class="logo-img">
+        <div class="right-div">
+            <form class="search-bar js-search-form">
+                <input type="text" placeholder="Search">
+                <button type="submit">
+                    <img src="images-and-icons/icons/search.png" alt="search-icon">
+                </button>
+            </form>
+            <div class="profile-and-notification">
+                <button>
+                    <img src="images-and-icons/icons/notification.png" alt="notification-icon">
+                    <span class="notification-alert"></span>
+                    <span class="tool-tip">Notifications</span>
+                </button>
+                <div class="user-profile">
+                    <div class="profile-img-div">
+                        <img src="images-and-icons/bafon-profile.jpeg" alt="user-profile-picture">
+                        <span class="tool-tip">Profile</span>
+                    </div>
+                    <p class="user-profile-name">Pn Bafon</p>
+                    <img src="images-and-icons/icons/down-arrow.png" class="drop-profile" alt="expand-profile" style="border: none ; border-radius: 0px; margin-right: 0px ; width: 1rem; height: 1rem ;">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-overlay js-search-overlay">
+        <div class="mobile-search-nav">
+            <button class="mobile-back-button js-back-search-button">
+                <img src="images-and-icons/icons/back.png" alt="back-button">
+            </button>
+
+            <form action="" class="mobile-search-bar">
+                <input type="text" placeholder="Search" class="js-mobile-search-input">
+                <button>
+                    <img src="images-and-icons/icons/search.png" alt="search-btn">
+                </button>
+            </form>
+        </div>
+
+        <div class="recomendations">
+
+        </div>
+    </div>
+    <script src="scripts/dashboard/main.js" type="module"></script>
+</body>
+</html>
