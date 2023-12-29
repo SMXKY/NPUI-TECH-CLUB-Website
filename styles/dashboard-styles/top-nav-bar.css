@@ -68,10 +68,12 @@
 .profile-and-notification{
     display: flex ;
     align-items: center ;
+    position: relative ;
+    justify-content: center ;
 }
 
 .profile-and-notification button img{
-    width: 1.8rem ;
+    width: 1.5rem ;
 }
 
 .profile-and-notification button{
@@ -101,7 +103,7 @@
     padding: 0.4rem ;
     position: absolute ;
     font-size: 0.7rem ;
-    bottom: -28px ;
+    bottom: -2.2rem ;
     box-shadow: 0px 0px 6px rgb(255, 255, 255, 0.15);
     opacity: 0 ;
 }
@@ -142,21 +144,27 @@
 
 .user-profile p{
     font-size: 0.8rem ;
-    margin-right: 1.5rem ;
+    margin-right: 2rem ;
 }
 
 .profile-img-div{
     display: flex ;
     justify-content: center ;
     position: relative ;
-    margin-right: 1.5rem ;
+    margin-right: 2rem ;
 }
 
 .profile-img-div:hover .tool-tip{
     opacity: 1 ;
 }
 
-@media(max-width: 662px){
+@media(max-width: 800px){
+    .tool-tip{
+        display: none ;
+    }
+}
+
+@media(max-width: 683px){
     .tool-tip{
         display: none ;
     }
@@ -208,6 +216,10 @@
     }
 }
 
+.off-tool-tip{
+    display: none ;
+}
+
 @media(max-width: 448px){
     .search-bar input{
         display: none ;
@@ -249,11 +261,11 @@
     }
 
     .profile-and-notification button{
-        margin-right: 0.5rem ;
+        margin-right: 1rem ;
     }
 
     .search-bar{
-        margin-right: 0.5rem ;
+        margin-right: 1rem ;
     }
 }
 
@@ -320,4 +332,97 @@
 .mobile-search-bar button{
     background: none ;
     border: none ;
+}
+
+@media(max-width: 448px){
+    .mobile-back-button img{
+        width: 1.3rem ;
+        margin-right: 0.5rem ;
+    }
+
+    .mobile-search-nav{
+        padding: 0.5rem 0.5rem ;
+    }
+}
+
+.profile-and-notification-drop-down{
+    position: absolute ;
+    background-color: var(--nav-backgroung-color);
+    padding: 1.5rem 1.5rem ;
+    padding-right: 10rem ;
+    padding-bottom: 3rem ;
+    bottom: -16.5rem ;
+    box-shadow: 0px 0px 6px rgb(255, 255, 255, 0.15) ;
+    border-radius: 0.3rem ;
+    display: none ;
+}
+
+.on-profile{
+    display: block ;
+}
+
+.user-profile-info img{
+    width: 3.5rem ;
+    height: 3.5rem ;
+    border-radius: 50% ;
+    margin-right: 1rem ;
+}
+
+.user-profile-info{
+    display: flex ;
+    align-items: center ;
+}
+
+.user-profile-name{
+    font-weight: 500 ;
+    width: 5rem ;
+    font-size: 1rem ;
+}
+
+.user-profile-user-name{
+    width: 6rem ;
+    font-size: 0.75rem ;
+    color: var(--alt-text-color) ;
+    font-weight: 400 ;
+}
+
+.user-profile-links{
+    margin-top: 2rem ;
+}
+
+.user-profile-links a{
+    text-decoration: none ;
+}
+
+.user-profile-links a:hover p{
+   opacity: 0.8 ;
+}
+
+.user-profile-links a div img{
+    width: 1.5rem ;
+    margin-right: 1rem ;
+}
+
+.user-profile-links a div p{
+    color: rgb(204,204,204) ;
+    font-size: 0.8rem ;
+    font-weight: 500 ;
+}
+
+.user-profile-links a div{
+    display: flex ;
+    align-items: center ;
+    margin-top: 1rem ;
+}
+
+@media(max-width: 671px){
+    .profile-and-notification-drop-down{
+        padding-right: 8rem ;
+    }
+}
+
+@media(max-width: 683px){
+    .profile-and-notification-drop-down{
+        display: none ;
+    }
 }
