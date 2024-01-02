@@ -17,6 +17,8 @@ export function navBarButtons(){
                     document.querySelector('.js-profile-info').classList.remove('on-profile') ;
                 }
             }) ;
+        }else{
+            window.location.href = '/profile' ;
         }
     }) ;
 
@@ -35,6 +37,8 @@ export function navBarButtons(){
                     document.querySelector('.js-notification-info').classList.remove('on-profile') ;
                 }
             }) ;
+        }else{
+            window.location.href = '/notifications' ;
         }
     }) ;
 }

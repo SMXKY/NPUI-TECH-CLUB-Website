@@ -1,4 +1,4 @@
-.logo-img{
+.logo-img, .side-pop-up img{
     width: 3rem ;
 }
 
@@ -164,9 +164,13 @@
     }
 }
 
-@media(max-width: 683px){
+@media(max-width: 727px){
     .tool-tip{
         display: none ;
+    }
+
+    .logo-holder{
+        padding-left: 1rem ;
     }
 
     .user-profile{
@@ -199,16 +203,18 @@
         margin-right: 1rem ;
     }
 
-    .logo-img{
+    .logo-img, .side-pop-up img{
         width: 2rem ;
+        height: 2rem ;
     }
 
     .profile-and-notification button img{
         width: 1.5rem ;
     }
 
-    .logo-img{
+    .logo-img, .side-pop-up img{
         width: 1.5rem ;
+        height: 1.5rem ;
     }
 
     .top-nav-bar, .mobile-search-nav{
@@ -251,8 +257,9 @@
         width: 1.1rem ;
     }
 
-    .logo-img{
-        width: 1.5rem ;
+    .logo-img, .side-pop-up img{
+        width: 1.2rem ;
+        height: 1.2rem ;
     }
 
     .profile-img-div img{

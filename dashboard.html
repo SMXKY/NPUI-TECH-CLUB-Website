@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="styles/dashboard-styles/general.css">
     <link rel="shortcut icon" href="images-and-icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/dashboard-styles/top-nav-bar.css">
+    <link rel="stylesheet" href="styles/dashboard-styles/left-side-bar.css">
 </head>
 <body>
     <nav class="top-nav-bar">
-        <img src="images-and-icons/club-logo.png" alt="club-logo" class="logo-img">
+        <div class="site-logo-holder">
+            <button class="side-pop-up js-side-bar-btn">    
+                <img src="images-and-icons/icons/menu-icon.svg" alt="menu-icon">
+            </button>
+            <img src="images-and-icons/club-logo.png" alt="club-logo" class="logo-img">
+        </div>
         <div class="right-div">
             <form class="search-bar js-search-form">
                 <input type="text" placeholder="Search">
@@ -138,6 +144,36 @@
 
         </div>
     </div>
+
+    <nav class="left-side-bar js-side-bar">
+        <a href="#">
+            <div class="left-nav-button on-tab dashboard-tab">
+                <img src="images-and-icons/icons/dashboard-icon.svg" alt="navigation-button-icon" class="left-nav-icon">
+
+                <p class="nav-name js-side-bar-text">
+                    Dashboard
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="left-nav-button tasks-tab">
+                <img src="images-and-icons/icons/task-icon.svg" alt="navigation-button-icon" class="left-nav-icon">
+
+                <p class="nav-name js-side-bar-text">
+                    Task
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="left-nav-button hall-of-fame-tab">
+                <img src="images-and-icons/icons/hall-of-fame-icon.svg" alt="navigation-button-icon" class="left-nav-icon">
+
+                <p class="nav-name js-side-bar-text">
+                    Hall Of Fame
+                </p>
+            </div>
+        </a>
+    </nav>
     <script src="scripts/dashboard/main.js" type="module"></script>
 </body>
 </html>

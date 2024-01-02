@@ -1,5 +1,6 @@
 import { loadSearchBar} from "./searchBar.js";
 import { navBarButtons } from "./navBar.js";
+import { sideBarFunctionality } from "./sideBar.js";
 
 const searchBar = document.querySelector('.js-search-form') ;
 
@@ -11,3 +12,5 @@ searchBar.addEventListener('submit', (event) => {
 }) ;
 
 navBarButtons() ;
+
+sideBarFunctionality() ;
