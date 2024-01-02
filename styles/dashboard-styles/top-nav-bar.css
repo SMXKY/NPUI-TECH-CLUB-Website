@@ -352,13 +352,9 @@
     padding-right: 10rem ;
     padding-bottom: 3rem ;
     bottom: -16.5rem ;
-    box-shadow: 0px 0px 6px rgb(255, 255, 255, 0.15) ;
+    box-shadow: 0px 0px 3px rgb(255, 255, 255, 0.15) ;
     border-radius: 0.3rem ;
     display: none ;
-}
-
-.on-profile{
-    display: block ;
 }
 
 .user-profile-info img{
@@ -415,6 +411,115 @@
     margin-top: 1rem ;
 }
 
+
+.profile-and-notification button{
+    display: flex ;
+    justify-content: center ;
+    position: relative ;
+}
+
+.notification-btn-drop-down{
+    position: absolute ;
+    background-color: var(--nav-backgroung-color);
+    padding: 0px ;
+    padding-bottom: 0rem ;
+    bottom: -25.4rem ;
+    box-shadow: 0px 0px 3px rgb(255, 255, 255, 0.15) ;
+    border-radius: 0.3rem ;
+    display: none ;
+    z-index: 101 ;
+}
+
+.notification-header{
+    border-bottom: solid 1px var(--alt-color) ;
+    padding: 1.1rem 0rem ;
+    padding-left: 1.1rem ;
+    padding-right: 16rem ;
+}
+
+.notification-header p{
+    font-weight: 600 ;
+    font-size: 1.2rem ;
+}
+
+.notification-template{
+    display: flex ;
+    align-items: center ;
+    padding: 1rem 0rem ;
+    width: 100% ;
+}
+
+.notification-template:hover{
+    background-color: rgba(47, 47, 47, 0.6) ;
+}
+
+.notification-image-container{
+    width: 4rem ;
+    height: 4rem ;
+    border-radius: 50% ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    background-color: rgba(47, 47, 47, 0.25) ;
+    padding: 0px ;
+    margin-right: 0.8rem ;
+    margin-left: 1.1rem ;
+}
+
+.notification-img{
+    height: 3.5rem ;
+    border-radius: 50% ;
+    object-fit: cover ;
+    width: 3rem ;
+}
+
+.system-profile-picture{
+    height: 2.7rem ;
+    /*object-fit: cover ;*/
+    width: 2.7rem ;
+}
+
+.notification-text{
+    font-weight: 500 ;
+    font-size: 1rem ;
+    width: 20rem ;
+    text-align: left ;
+}
+
+.notification-time{
+    text-align: left ;
+    color: rgb(203,203,203) ;
+    font-size: 0.85em ;
+    margin-top: 0.4rem ;
+}
+
+.see-more-notifications{
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    padding: 1rem 0rem ;
+    border-top: solid 1px var(--alt-color) ;
+}
+
+.see-more-notifications a{
+    text-decoration: none ;
+    font-size: 1rem ;
+    color: var(--call-to-action) ;
+    font-weight: 500 ;
+}
+
+.actual-notifiications a{
+    text-decoration: none ;
+}
+
+.see-more-notifications a:hover{
+    color: var(--gold) ;
+}
+
+.on-profile{
+    display: block ;
+}
+
 @media(max-width: 671px){
     .profile-and-notification-drop-down{
         padding-right: 8rem ;
@@ -422,7 +527,7 @@
 }
 
 @media(max-width: 683px){
-    .profile-and-notification-drop-down{
+    .profile-and-notification-drop-down, .notification-btn-drop-down{
         display: none ;
     }
 }
