@@ -1,148 +1,153 @@
-.left-side-bar{
-    background-color: var(--nav-backgroung-color) ;
-    position: fixed ;
-    top: 0rem ;
-    bottom: 0rem ;
-    left: 0rem ;
-    padding: 8rem 0.5rem ;
-    z-index: 99 ;
+.left-side-bar {
+  background-color: var(--nav-backgroung-color);
+  position: fixed;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  padding: 8rem 0.5rem;
+  z-index: 99;
 }
 
-.left-side-bar a{
-    text-decoration: none ;
+.left-side-bar a {
+  text-decoration: none;
 }
 
-.on-tab{
-    background-color: var(--call-to-action) ;  
+.on-tab {
+  background-color: var(--call-to-action);
 }
 
-.left-nav-button{
-    display: flex ;
-    align-items: center ;
-    /*background-color: var(--call-to-action) ;*/
-    padding: 0.3rem 0.3rem;
-    border-radius: 0.5rem ;
-    margin-bottom: 0.2rem ;
+.left-nav-button {
+  display: flex;
+  align-items: center;
+  /*background-color: var(--call-to-action) ;*/
+  padding: 0.3rem 0.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
-.left-nav-button:hover{
-    background-color: var(--call-to-action) ;
+.left-nav-button:hover {
+  background-color: var(--call-to-action);
 }
 
-.left-nav-button img{
-    width: 2.5rem ;
-    margin-right: 0.5rem ;
+.left-nav-button img {
+  width: 2.5rem;
+  margin-right: 0.5rem;
 }
 
-.left-nav-button p{
-    font-weight: 500 ;
-    margin-right: 2.5rem ;
-    transition: ease-in-out 0.5s ;
+.left-nav-button p {
+  font-weight: 500;
+  margin-right: 2.5rem;
+  transition: ease-in-out 0.5s;
 }
 
-.site-logo-holder{
-    display: flex ;
-    justify-content: center ;
-    width: 8rem ;
+.site-logo-holder {
+  display: flex;
+  justify-content: center;
+  width: 8rem;
 }
 
-.side-pop-up{
-    display: none ;
+.side-pop-up {
+  display: none;
 }
 
-@media(max-width: 813px){
-    .nav-name{
-        display: none ;
-    }
+@media (max-width: 813px) {
+  .nav-name {
+    display: none;
+  }
 
-    .site-logo-holder{
-        display: block ;
-    }
+  .site-logo-holder {
+    display: block;
+  }
 
-    .left-nav-button p{
-        font-size: 0.8rem ;
-        margin-left: 0.5rem ;
-    }
+  .left-nav-button p {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
 
-    .left-nav-button img{
-        margin-right: 0rem ;
-    }
+  .left-nav-button img {
+    margin-right: 0rem;
+  }
 
-    .site-logo-holder{
-        width: 0rem ;
-        padding-left: 1.5rem ;
-        display: flex ;
-        align-items: center ;
-    }
+  .site-logo-holder {
+    width: 0rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
 
-    .side-pop-up{
-        display: block ;
-        border: none ;
-        background: none ;
-    }
+  .side-pop-up {
+    display: block;
+    border: none;
+    background: none;
+  }
 
-    .side-pop-up img{
-        margin-right: 0.5rem ;
-        margin-left: 1.2rem ;
-        margin-right: 2rem ;
-    }
+  .side-pop-up img {
+    margin-right: 0.5rem;
+    margin-left: 1.2rem;
+    margin-right: 2rem;
+  }
 
-    .logo-img, .side-pop-up img{
-        width: 2rem ;
-        height: 2rem ;
-    }
+  .logo-img,
+  .side-pop-up img {
+    width: 2rem;
+    height: 2rem;
+  }
 
+  .left-nav-button {
+    margin-top: 0.5rem;
+  }
 }
 
-@media(max-width: 727px){
-    .logo-holder{
-        padding-left: 0.5rem ;
-    }
+@media (max-width: 727px) {
+  .logo-holder {
+    padding-left: 0.5rem;
+  }
 
-    .side-pop-up img{
-        margin-right: 0.5rem ;
-        margin-left: 2.25rem ;
-        margin-right: 1.4rem ;
-    }
+  .side-pop-up img {
+    margin-right: 0.5rem;
+    margin-left: 2.25rem;
+    margin-right: 1.4rem;
+  }
 }
 
-@media(max-width: 683px){
-    .left-nav-button img{
-        width: 1.5rem ;
-    }
+@media (max-width: 683px) {
+  .left-nav-button img {
+    width: 1.5rem;
+  }
 
-    .left-side-bar{
-        padding-top: 5rem ;
-    }
+  .left-side-bar {
+    padding-top: 5rem;
+  }
 
-    .logo-img, .side-pop-up img{
-        width: 1..3rem ;
-        height: 1.3rem ;
-    }
+  .logo-img,
+  .side-pop-up img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
 
-    .side-pop-up img{
-        margin-right: 0.5rem ;
-        margin-left: 1rem ;
-        margin-right: 1rem ;
-    }
+  .side-pop-up img {
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
-@media(max-width: 449px){
-    .left-side-bar{
-        left: -20rem ;
-    }
+@media (max-width: 449px) {
+  .left-side-bar {
+    left: -20rem;
+  }
 }
 
-.show-bar{
-    left: 0px ;
+.show-bar {
+  left: 0px;
 }
 
-.show-text{
-    display: block ;
+.show-text {
+  display: block;
 }
 
-
-.check, .left-side-bar a div p{
-    position: relative ;
-    transition: 0.5s ;
+.check,
+.left-side-bar a div p {
+  position: relative;
+  transition: 0.5s;
 }

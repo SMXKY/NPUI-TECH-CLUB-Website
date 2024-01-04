@@ -1,23 +1,24 @@
-:root{
-    --alt-color: rgb(110,110,110) ;
-    --call-to-action: rgb(12,140,233) ;
-    --nav-backgroung-color: rgb(56,56,56) ;
-    --button-color: rgb(89,87,87) ;
-    --alt-text-color: rgb(154,151,151) ;
-    --body-color: rgb(44,44,44) ;
-    --gold: rgb(241,196,58) ;
-    --call-to-action-muted: rgba(12,140,233,0.8) ;
+:root {
+  --alt-color: rgb(110, 110, 110);
+  --call-to-action: rgb(12, 140, 233);
+  --nav-backgroung-color: rgb(56, 56, 56);
+  --button-color: rgb(89, 87, 87);
+  --alt-text-color: rgb(154, 151, 151);
+  --body-color: rgb(44, 44, 44);
+  --gold: rgb(241, 196, 58);
+  --call-to-action-muted: rgba(12, 140, 233, 0.8);
+  --light-grey: #d9d9d9;
 }
 
-*{
-    padding: 0px ;
-    margin: 0px ;
-    box-sizing: border-box ;
-    transition: 0.15s ;
-    color: white ;
-    font-family: roboto, arial ;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: 0.15s;
+  color: white;
+  font-family: roboto, arial;
 }
 
-body{
-    background-color: var(--body-color) ;
+body {
+  background-color: var(--body-color);
 }
