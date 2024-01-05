@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/dashboard-styles/top-nav-bar.css" />
     <link rel="stylesheet" href="styles/dashboard-styles/left-side-bar.css" />
     <link rel="stylesheet" href="styles/dashboard-styles/qa-section.css" />
+    <link rel="stylesheet" href="styles/dashboard-styles/all-tasks.css" />
   </head>
   <body>
     <nav class="top-nav-bar">
@@ -404,6 +405,148 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="page-body-task">
+      <div class="task-page-header">
+        <a href="">
+          <div class="task-page-header-option on-task-option">
+            <img src="images-and-icons/icons/task.svg" alt="task-option-icon" />
+            <p>All Tasks</p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="task-page-header-option">
+            <img
+              src="images-and-icons/icons/submitted.svg"
+              alt="task-option-icon"
+            />
+            <p>Submitted</p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="task-page-header-option">
+            <img
+              src="images-and-icons/icons/not-submitted.svg"
+              alt="task-option-icon"
+            />
+            <p>Not Submitted</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="progress-bar">
+        <div class="task-circle completed-task">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+          />
+
+          <div class="task-circle-tool-tip">Task 1</div>
+        </div>
+
+        <div class="task-circle completed-task">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+          />
+
+          <div class="task-circle-tool-tip">Task 2</div>
+        </div>
+
+        <div class="task-circle completed-task">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+          />
+
+          <div class="task-circle-tool-tip">Task 3</div>
+        </div>
+
+        <div class="task-circle completed-task">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+          />
+
+          <div class="task-circle-tool-tip">Task 4</div>
+        </div>
+
+        <div class="task-circle completed-task">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+          />
+
+          <div class="task-circle-tool-tip">Task 5</div>
+        </div>
+
+        <div class="task-circle completed-task">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+          />
+
+          <div class="task-circle-tool-tip">Task 6</div>
+        </div>
+
+        <div class="task-circle">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+            style="display: none"
+          />
+
+          <div class="task-circle-tool-tip">Task 7</div>
+        </div>
+
+        <div class="task-circle">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+            style="display: none"
+          />
+
+          <div class="task-circle-tool-tip">Task 8</div>
+        </div>
+
+        <div class="task-circle">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+            style="display: none"
+          />
+
+          <div class="task-circle-tool-tip">Task 9</div>
+        </div>
+
+        <div class="task-circle">
+          <img
+            src="images-and-icons/icons/task-complete.svg"
+            alt="check-icon"
+            style="display: none"
+          />
+
+          <div class="task-circle-tool-tip">Task 10</div>
+        </div>
+
+        <div
+          class="progress-bar-in"
+          style="
+            background: linear-gradient(
+              to right,
+              var(--progress-color) 0%,
+              var(--progress-color) 60%,
+              var(--alt-color) 60%,
+              var(--alt-color) 100%
+            );
+          "
+        ></div>
+      </div>
+
+      <div class="page-graphs"></div>
     </div>
     <script src="scripts/dashboard/main.js" type="module"></script>
   </body>

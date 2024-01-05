@@ -118,7 +118,7 @@
 }
 
 .top-comment .post-body p {
-  width: 15.7rem;
+  width: 19rem;
   font-size: 0.7rem;
 }
 
@@ -209,4 +209,22 @@
 
 .announcement-template::-webkit-scrollbar {
   display: none;
+}
+
+.q-and-a-icon {
+  display: none;
+}
+
+@media (max-width: 1305px) {
+  .q-and-a-icon {
+    display: flex;
+  }
+
+  .qa-section {
+    display: none;
+  }
+
+  body {
+    padding-right: 2rem;
+  }
 }
