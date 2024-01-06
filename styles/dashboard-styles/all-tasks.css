@@ -237,10 +237,6 @@
     font-weight: 400;
   }
 
-  .progress-bar {
-    /*width: 34rem;*/
-  }
-
   .progress-bar-holder::-webkit-scrollbar {
     display: none;
   }
