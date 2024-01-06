@@ -67,8 +67,8 @@ export function renderCharts() {
     id: "sliceThickness",
     beforeDraw(chart, plugins) {
       //console.log(chart.chartArea.width);
-      chart.getDatasetMeta(0).data[1].outerRadius = 105;
-      chart.getDatasetMeta(0).data[0].outerRadius = 110;
+      chart.getDatasetMeta(0).data[1].outerRadius = 95;
+      chart.getDatasetMeta(0).data[0].outerRadius = 100;
     },
   };
 
@@ -78,7 +78,7 @@ export function renderCharts() {
       labels: ["Course Completion", "Course Outline"],
       datasets: [
         {
-          label: "online tutorial subjects",
+          label: "Course progress",
           data: [80, 20],
           backgroundColor: ["rgb(241, 196, 58)", "rgb(56,56,56)"],
           hoverOffset: 5,

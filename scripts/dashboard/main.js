@@ -1,6 +1,7 @@
 import { loadSearchBar } from "./searchBar.js";
 import { navBarButtons } from "./navBar.js";
 import { sideBarFunctionality } from "./sideBar.js";
+import { taskCheck } from "./taskCheck.js";
 
 import { renderCharts } from "./Charts.js";
 
@@ -18,3 +19,5 @@ navBarButtons();
 sideBarFunctionality();
 
 renderCharts();
+
+taskCheck();
