@@ -101,3 +101,22 @@
 .task-circle:hover .task-circle-tool-tip {
   display: block;
 }
+
+.page-graphs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-graphs canvas {
+  height: 30rem;
+}
+
+.bar-chart-container {
+  width: 35rem;
+}
+
+.doughnut-container {
+  width: 22rem;
+  height: 22rem;
+}

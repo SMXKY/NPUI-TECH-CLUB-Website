@@ -387,9 +387,8 @@
 
             <div class="post-body">
               <p>
-                Have been trying to setup the django development environment in
-                vs code but i keep getting this issues, please what can be the
-                fix to the error below?
+                All back end developers have to submit their assignments latest
+                10 pm
               </p>
             </div>
 
@@ -546,8 +545,28 @@
         ></div>
       </div>
 
-      <div class="page-graphs"></div>
+      <div class="page-graphs">
+        <div class="bar-chart-container">
+          <canvas id="bar-chart"></canvas>
+        </div>
+        <div class="doughnut-container">
+          <canvas id="pie-chart"></canvas>
+        </div>
+      </div>
+
+      <div class="task-table">
+        <div class="task-table-head">
+          <p>All Task</p>
+          <p>Assigned on</p>
+          <p>Due Date</p>
+          <p>submitted</p>
+          <div class="options-done"></div>
+        </div>
+      </div>
     </div>
+
+    <!--Js files-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts/dashboard/main.js" type="module"></script>
   </body>
 </html>
