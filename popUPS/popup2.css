@@ -1,0 +1,58 @@
+.link_block{
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.829);
+    border: 2px solid  rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.headers{
+    color: rgba(255, 255, 255, 0.774);
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-left: 3%;
+}
+/* .headers:hover{
+    text-decoration: underline 3px  #1E90FF;
+} */
+.inputFlied{
+    width: 94%;
+    height: 6%;
+    margin: auto;
+    margin-left: 3%;
+    background-color: rgba(0, 0, 0, 0.301);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    border-bottom: 3px solid #1E90FF;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius:4px;
+    border-bottom-color:#1E90FF;
+    color: white;
+}
+/* .inputFlied:hover{
+    border: 4px solid  #1E90FF;
+} */
+.btn_submit{
+    float: right;
+    margin-right: 3%;
+    width: 10%;
+    margin-top: 8%;
+    background-color:#1E90FF;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    color: white;
+}
+.btn_submit:hover{
+    transform: scale(1 ,1.2);
+}
+/* mobile responsive for link section */
+@media screen  and (max-width: 800px){
+    .btn_submit{
+        width: 30%;
+
+    }
+    .link_block{
+        height:30% ;
+    }
+}
