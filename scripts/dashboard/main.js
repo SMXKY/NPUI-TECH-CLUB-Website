@@ -2,6 +2,7 @@ import { loadSearchBar } from "./searchBar.js";
 import { navBarButtons } from "./navBar.js";
 import { sideBarFunctionality } from "./sideBar.js";
 import { taskCheck } from "./taskCheck.js";
+import { renderCalendar } from "./calendar.js";
 
 import { renderCharts } from "./Charts.js";
 
@@ -21,3 +22,5 @@ sideBarFunctionality();
 renderCharts();
 
 taskCheck();
+
+renderCalendar();

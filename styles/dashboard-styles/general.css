@@ -6,7 +6,7 @@
   --alt-text-color: rgb(154, 151, 151);
   --body-color: rgb(44, 44, 44);
   --gold: rgb(241, 196, 58);
-  --call-to-action-muted: rgba(12, 140, 233, 0.8);
+  --call-to-action-muted: rgba(12, 140, 233, 0.2);
   --light-grey: #d9d9d9;
   --cream-white-text: rgb(217, 217, 217);
   --progress-color: rgb(70, 179, 131);
@@ -19,6 +19,10 @@
   transition: 0.15s;
   color: white;
   font-family: roboto, arial;
+}
+
+img {
+  object-fit: cover;
 }
 
 body {

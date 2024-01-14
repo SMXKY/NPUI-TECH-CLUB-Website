@@ -1,0 +1,825 @@
+.top-cards-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.display-card-template {
+  background-color: var(--nav-backgroung-color);
+  padding: 0.5rem 1rem;
+  display: flex;
+  border-radius: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  width: 12rem;
+  height: 5rem;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.display-card-image {
+  width: 3.2rem;
+  position: absolute;
+  right: -1rem;
+  bottom: 0.5rem;
+}
+
+.display-card-info p {
+  padding: 0.1rem 0rem;
+}
+
+.display-card-name {
+  color: var(--cream-white-text);
+  font-size: 0.9rem;
+}
+
+.display-card-figure {
+  color: var(--call-to-action);
+}
+
+.display-card-template:hover .display-card-image {
+  width: 3.8rem;
+}
+
+.display-card-template:hover .display-card-info .display-card-name {
+  opacity: 0.7;
+}
+
+.display-card-template:hover .display-card-info .display-card-figure {
+  opacity: 0.7;
+}
+
+.top-cards-display a {
+  text-decoration: none;
+}
+
+@media (max-width: 1412px) {
+  .display-card-template {
+    width: 10rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 917px) {
+  .display-card-template {
+    width: 8rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 636px) {
+  .top-card-holder {
+    display: flex;
+    justify-content: center;
+  }
+  .progress-bar-holder {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .display-card-template {
+    width: 39vw;
+    height: 14vw;
+  }
+
+  .top-cards-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3vw;
+    column-gap: 3vw;
+  }
+}
+
+@media (max-width: 635px) {
+  .top-cards-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3vw;
+    column-gap: 3vw;
+  }
+
+  .top-card-holder {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 577px) {
+  .display-card-template {
+    width: 10.5rem;
+    height: 5.5rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .top-cards-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3vw;
+    column-gap: 3vw;
+  }
+
+  .top-card-holder {
+    display: flex;
+    justify-content: center;
+  }
+
+  .display-card-template {
+    width: 10.2rem;
+    height: 5.5rem;
+  }
+
+  .top-cards-display {
+    margin-top: -1rem;
+  }
+}
+
+@media (max-width: 429px) {
+  .display-card-template {
+    width: 12rem;
+    height: 5.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .display-card-template {
+    width: 11.5rem;
+    height: 5.5rem;
+  }
+}
+
+@media (max-width: 391px) {
+  .display-card-template {
+    width: 10.5rem;
+    height: 5.5rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .display-card-template {
+    width: 11rem;
+    height: 5.5rem;
+  }
+}
+
+@media (max-width: 367px) {
+  .display-card-template {
+    width: 10rem;
+    height: 5.5rem;
+  }
+}
+
+@media (max-width: 348px) {
+  .top-cards-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3vw;
+    column-gap: 3vw;
+  }
+
+  .display-card-template {
+    width: 9rem;
+    height: 4.5rem;
+  }
+}
+
+@media (max-width: 311px) {
+  .top-cards-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2vw;
+    column-gap: 2vw;
+  }
+
+  .display-card-template {
+    width: 8rem;
+    height: 4rem;
+  }
+}
+
+/*Page graphs css*/
+/*Page graphs css*/
+/*Page graphs css*/
+/*Page graphs css*/
+/*Page graphs css*/
+/*Page graphs css*/
+
+.dashboard-page-graphs {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.dashboard-pie-chart-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 27.8vw;
+  width: 28vw;
+}
+
+.line-graph-dashboard {
+  background-color: var(--nav-backgroung-color);
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.task-submisions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-sub-head {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.task-sumisions-right,
+.right-side-calendar-header {
+  display: flex;
+  align-items: center;
+}
+
+.task-sumisions-right button,
+.right-side-calendar-header button {
+  background: none;
+  border: none;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task-sumisions-right button p,
+.right-side-calendar-header button p {
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+.toogle-circle {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--nav-backgroung-color);
+  border: solid 0.5px var(--call-to-action);
+  margin-right: 0.5rem;
+}
+
+.toogle-circle-on {
+  background-color: var(--call-to-action);
+  border: solid 0.5px white;
+}
+
+.submision-counter,
+.line-graph-user-dashboard-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.submision-counter p span {
+  font-weight: 600;
+}
+
+.submision-counter p,
+.submision-counter a {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.submision-counter a {
+  color: var(--call-to-action);
+}
+
+.submision-counter a:hover {
+  opacity: 0.8;
+}
+
+.line-graph-user-dashboard-data-template img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.line-graph-user-dashboard-data-template {
+  background-color: var(--body-color);
+  cursor: pointer;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+}
+
+.line-graph-user-dashboard-data-template-info p {
+  color: var(--alt-text-color);
+  font-size: 0.9rem;
+}
+
+.line-graph-user-dashboard-data-template-info button {
+  background-color: var(--call-to-action);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  padding: 0.2rem 1rem;
+  margin-top: 0.3rem;
+  font-size: 0.7rem;
+}
+
+.line-graph-user-dashboard-data-template-info button:hover {
+  opacity: 0.8;
+}
+
+.line-graph-user-dashboard-data {
+  width: 28vw;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.graph-holder-line {
+  background-color: var(--body-color);
+  border-radius: 0.3rem;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border-left: solid var(--call-to-action) 1px;*/
+  /*border-right: solid var(--call-to-action) 1px;*/
+  /*border-bottom: solid var(--call-to-action) 1px;*/
+}
+
+.line-graph-details {
+  display: flex;
+  margin-top: 0.7rem;
+  font-weight: 300;
+}
+
+.line-graph-details p {
+  font-size: 0.7rem;
+}
+
+.line-graph-details p span {
+  font-weight: 500;
+}
+
+@media (max-width: 1306px) {
+  .dashboard-pie-chart-holder {
+    height: 33.8vw;
+    width: 35vw;
+  }
+
+  .line-graph-user-dashboard-data {
+    width: 35vw;
+  }
+
+  .line-graph-user-dashboard-data-template {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 1056px) {
+  .dashboard-pie-chart-holder {
+    height: 34.8vw;
+    width: 32vw;
+  }
+
+  .line-graph-user-dashboard-data {
+    width: 37vw;
+  }
+
+  .line-graph-user-dashboard-data-template {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .dashboard-page-graphs {
+    display: block;
+  }
+
+  .dashboard-pie-chart-holder {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .line-graph-user-dashboard-data {
+    width: 100%;
+  }
+
+  .line-graph-user-dashboard-data-template {
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .line-graph-user-dashboard-data-template img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .line-graph-user-dashboard-data-template {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+  .line-graph-user-dashboard-data-template-info p {
+    color: var(--alt-text-color);
+    font-size: 0.8rem;
+  }
+
+  .line-graph-user-dashboard-data-template-info button {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .line-graph-user-dashboard-data-template img {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 0.4rem;
+  }
+
+  .line-graph-user-dashboard-data-template {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .line-graph-user-dashboard-data-template-info p {
+    color: var(--alt-text-color);
+    font-size: 0.8rem;
+  }
+
+  .line-graph-user-dashboard-data-template-info button {
+    font-size: 0.6rem;
+  }
+
+  .task-submisions-header {
+    display: block;
+  }
+
+  .task-sub-head {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .dashboard-pie-chart-holder {
+    height: 60vh;
+    width: 100%;
+  }
+}
+
+/*calendar and q and a section css*/
+/*calendar and q and a section css*/
+/*calendar and q and a section css*/
+/*calendar and q and a section css*/
+/*calendar and q and a section css*/
+/*calendar and q and a section css*/
+/*calendar and q and a section css*/
+
+.dashboard-page-calendar-and-q-and-a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.calendar {
+  background-color: var(--nav-backgroung-color);
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side-calendar-header {
+  display: flex;
+}
+
+.left-side-calendar-header button img {
+  width: 1rem;
+}
+
+.left-side-calendar-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.left-side-calendar-header p {
+  margin-right: 0.5rem;
+}
+
+.calender-sub-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+.calender-sub-head p,
+.calender-sub-head a {
+  font-size: 0.7rem;
+}
+
+.calender-sub-head a {
+  text-decoration: none;
+  color: var(--call-to-action);
+}
+
+.actual-calendar {
+  margin-top: 0.5rem;
+}
+
+.days-of-the-week p {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.actual-calendar {
+  margin-top: 1.6rem;
+}
+
+.days-of-the-week {
+  display: grid;
+  grid-template-columns: repeat(7, 4vw);
+  border-bottom: solid 0.3px var(--call-to-action);
+  padding-bottom: 0.5rem;
+}
+
+.days-in-a-month {
+  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: repeat(7, 4vw);
+  row-gap: 0.2rem;
+  padding: 0.5rem 0rem;
+  overflow: hidden;
+}
+
+.the-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.the-date div {
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.date-color {
+  background-color: var(--call-to-action);
+}
+
+.the-date {
+  position: relative;
+}
+
+.sub-total-tasks {
+  font-weight: 300;
+}
+
+.date-span {
+  position: absolute;
+  left: 1rem;
+  top: 0.6rem;
+  right: -1rem;
+  bottom: 0.6rem;
+  background-color: var(--call-to-action-muted);
+}
+
+.date-span-last {
+  right: 1rem;
+}
+
+.non-date {
+  opacity: 0;
+}
+
+.dash-board-questions {
+  background-color: var(--nav-backgroung-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.dash-board-question-holder {
+  border-bottom: solid var(--alt-color) 0.5px;
+  padding-bottom: 1rem;
+  border-radius: 0px;
+}
+
+.dash-board-questions a {
+  text-decoration: none;
+}
+
+.dash-board-questions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+
+.dash-board-questions-header p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.dash-board-questions-header a {
+  color: var(--call-to-action);
+  font-size: 0.8rem;
+}
+
+.dash-board-questions-header a:hover {
+  opacity: 0.8;
+}
+
+.dash-board-question-holde .post-body p {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 1434px) {
+  .dash-board-question-holde .post-body p {
+    font-size: 0.7rem;
+  }
+
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 3.5vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 3.5vw);
+  }
+}
+
+@media (max-width: 1361px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 3vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 3vw);
+  }
+}
+
+@media (max-width: 1305px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 5vw);
+  }
+
+  .dash-board-question-holde .post-body p {
+    font-size: 1rem;
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 5vw);
+  }
+}
+
+@media (max-width: 1031px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 4vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 4vw);
+  }
+}
+
+@media (max-width: 911px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 9.5vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 9.5vw);
+  }
+
+  .dashboard-page-calendar-and-q-and-a {
+    display: block;
+  }
+
+  .dash-board-questions {
+    margin-top: 1rem;
+  }
+
+  .date-span {
+    left: 2rem;
+    right: -2rem;
+  }
+
+  .date-span-last {
+    right: 3rem;
+  }
+
+  .post-body p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 813px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 11.5vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 11.5vw);
+  }
+}
+
+@media (max-width: 704px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 11.3vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 11.3vw);
+  }
+}
+
+@media (max-width: 677px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 11.6vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 11.6vw);
+  }
+}
+
+@media (max-width: 593px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 11.4vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 11.4vw);
+  }
+}
+
+@media (max-width: 566px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 11.2vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 11.2vw);
+  }
+}
+
+@media (max-width: 536px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 10.2vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 10.2vw);
+  }
+}
+
+@media (max-width: 430px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 12vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 12vw);
+  }
+}
+
+@media (max-width: 350px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 12.4vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 12.4vw);
+  }
+}
+
+@media (max-width: 950px) {
+  .dashboard-pie-chart-holder {
+    height: 22rem;
+    border: solid var(--call-to-action) 1px;
+  }
+
+  .bar-chart-container {
+    height: 0rem;
+    border: solid var(--call-to-action) 1px;
+  }
+}

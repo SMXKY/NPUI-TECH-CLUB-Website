@@ -181,7 +181,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -337,6 +337,14 @@
     padding: 0.8rem 0.5rem;
     column-gap: 0.3rem;
   }
+
+  .bar-chart-container,
+  .doughnut-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0rem;
+  }
 }
 
 @media (max-width: 350px) {
@@ -364,5 +372,11 @@
 @media (max-width: 726px) {
   body {
     padding-top: 4.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .bar-chart-container {
+    height: 13rem;
   }
 }
