@@ -10,6 +10,7 @@
   --light-grey: #d9d9d9;
   --cream-white-text: rgb(217, 217, 217);
   --progress-color: rgb(70, 179, 131);
+  --darker-page-text: rgba(199, 198, 198, 1);
 }
 
 * {

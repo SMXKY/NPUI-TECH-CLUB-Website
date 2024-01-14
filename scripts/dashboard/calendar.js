@@ -58,6 +58,8 @@ export function renderCalendar() {
         i + 1
       }</div></div>`;
     }
+
+    console.log("lasdjfaldsfkjladsfjlasdjflasjdflaksjdfljadsf");
   }
 
   dayHolder.innerHTML = dayHolderHTML;

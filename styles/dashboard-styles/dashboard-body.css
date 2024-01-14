@@ -802,6 +802,16 @@
   }
 }
 
+@media (max-width: 370px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 11.2vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 11.2vw);
+  }
+}
+
 @media (max-width: 350px) {
   .days-of-the-week {
     grid-template-columns: repeat(7, 12.4vw);
@@ -809,6 +819,16 @@
 
   .days-in-a-month {
     grid-template-columns: repeat(7, 12.4vw);
+  }
+}
+
+@media (max-width: 330px) {
+  .days-of-the-week {
+    grid-template-columns: repeat(7, 12vw);
+  }
+
+  .days-in-a-month {
+    grid-template-columns: repeat(7, 12vw);
   }
 }
 
