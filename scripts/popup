@@ -1,0 +1,47 @@
+
+    const popbtn = document.getElementById('popup');
+const overlay = document.getElementById('overlay');
+const btn = document.getElementById('showpopup');
+const close = document.getElementById('closeBtn')
+
+btn.addEventListener('click' ,() => {
+    popbtn.style.display = "block"; 
+    overlay.style.display = "block";
+})
+close.addEventListener('click' ,() => {
+    popbtn.style.display = "none";
+    overlay.style.display = "none";
+})
+
+// !!!!!! popup for comments
+    const popbtn1 = document.getElementById('popup1');
+const btn1 = document.getElementById('showpopup1');
+const close1 = document.getElementById('closeBtn1')
+
+btn1.addEventListener('click' ,() => {
+    popbtn1.style.display = "block"; 
+    overlay.style.display = "block";
+})
+close1.addEventListener('click' ,() => {
+    popbtn1.style.display = "none";
+    overlay.style.display = "none";
+})
+// !!!!!! popup for assign to
+    const popbtn2 = document.getElementById('popup2');
+const btn2 = document.getElementById('showpopup2');
+const close2 = document.getElementById('closeBtn2')
+
+btn2.addEventListener('click' ,() => {
+    popbtn2.style.display = "block"; 
+    overlay.style.display = "block";
+})
+close2.addEventListener('click' ,() => {
+    popbtn2.style.display = "none";
+    overlay.style.display = "none";
+})
+
+
+
+
+
+   
