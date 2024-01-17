@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/dashboard-styles/general.css" />
+    <link rel="stylesheet" href="styles/dashboard-styles/all-tasks.css" />
     <link
       rel="shortcut icon"
       href="images-and-icons/favicon.ico"
@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="styles/dashboard-styles/top-nav-bar.css" />
     <link rel="stylesheet" href="styles/dashboard-styles/left-side-bar.css" />
     <link rel="stylesheet" href="styles/dashboard-styles/qa-section.css" />
-  <link rel="stylesheet" href="./styles/dashboard-styles/main-stack.css">
+    <link rel="stylesheet" href="./styles/dashboard-styles/main-stack.css">
+    <link rel="stylesheet" href="./styles/pop-up.css">
   </head>
   <body>
     <nav class="top-nav-bar">
@@ -189,7 +190,7 @@
         </div>
       </div>
     </nav>
-
+<!-- ----search bar -->
     <div class="search-overlay js-search-overlay">
       <div class="mobile-search-nav">
         <button class="mobile-back-button js-back-search-button">
@@ -210,7 +211,7 @@
 
       <div class="recomendations"></div>
     </div>
-
+<!-- -----left sidebar -->
     <nav class="left-side-bar js-side-bar">
       <a href="#">
         <div class="left-nav-button on-tab dashboard-tab">
@@ -234,7 +235,6 @@
           <p class="nav-name js-side-bar-text">Task</p>
         </div>
       </a>
-
       <a href="#">
         <div class="left-nav-button dashboard-tab q-and-a-icon">
           <img
@@ -246,7 +246,6 @@
           <p class="nav-name js-side-bar-text">Q/A</p>
         </div>
       </a>
-
       <a href="#">
         <div class="left-nav-button hall-of-fame-tab">
           <img
@@ -259,156 +258,267 @@
         </div>
       </a>
     </nav>
-    <!-- !!!!!!Stack card!!!!!!!!!! -->
-  <main class="stack-card">
-    <h1>Stacks</h1>
-    <div class="card-row">
-<div class="card-col">
-  <div class="img">
-    <img src="images-and-icons/front-end.jpg" width="300px" alt="">
-  </div>
-  <h3 class="card-head">Front End Development</h3>
- 
-  <div class="lang">
-    <div class="lang1">
-    <span><img src="./images-and-icons/icons/Programming Flag (1).png" alt=""> </span>  
-      <p>Languages 3</p>
-    </div>
-    <div class="lang2">
-      <span><img src="./images-and-icons/icons/Developer.png" alt=""></span>
-      <p>Students <span>35</span></p>
-    </div>
-  </div>
-    <p class="infos">
-      Front-end development involves creating the 
-      user interface and user experience of 
-      a website or application.
-    </p>
-    
-    <div class="card-footer">
-      <ul>
-        <li>
-         <img src="./images-and-icons/icons/Chat.png" alt="">
-        <span>300</span>
-        </li>
-       <li> <a href="" class="review">
-          Review content
-        </a>
-        <li><a href="" class="btn">Get started</a>
-      </ul>
-    </div>
-   
-  </div>
-<div class="card-col">
-  <div class="img">
-    <img src="images-and-icons/mobile.jpg" width="300px" alt="">
-  </div>
-  <h3 class="card-head">Mobile Development</h3>
-  <div class="card-body">
+    <!-- --page content--- -->
+<main class="modules">
+  <!--...progress bar... -->
+  <div class="progress-bar-holder">
+    <div class="progress-bar">
+      <div class="task-circle completed-task">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+        />
 
- <div class="lang">
-    <div class="lang1">
-    <span><img src="./images-and-icons/icons/Programming Flag (1).png" alt=""> </span>  
-      <p>Languages 3</p>
-    </div>
-    <div class="lang2">
-      <span><img src="./images-and-icons/icons/Developer.png" alt=""></span>
-      <p>Students <span>35</span></p>
-    </div>
-  </div>
-    <p class="infos">
-      Mobile development refers to the process of creating software
-      applications specifically designed for mobiledevices such as smartphones and tablets
-    
-    </p>
-    
-    <div class="card-footer">
-      <ul>
-        <li>
-         <span><img src="./images-and-icons/icons/Chat.png" alt=""></span>
-        <p><span>300</span></p>
-        </li>
-       <li> <a href="" class="review">
-          Review content
-        </a>
-        <li><a href="" class="btn">Get started</a>
-      </ul>
-    </div>
-    </div>
-  </div>
-<div class="card-col">
-  <div class="img">
-    <img src="images-and-icons/backend.png" width="300px" alt="">
-  </div>
-  <h3 class="card-head">Back End Development</h3>
-  <div class="card-body">
+        <div class="task-circle-tool-tip">Task 1</div>
+      </div>
 
- <div class="lang">
-    <div class="lang1">
-<span>  <img src="./images-and-icons/icons/Programming Flag (1).png" alt="">     </span>
-      <p>Languages 3</p>
-    </div>
-    <div class="lang2">
-      <span><img src="./images-and-icons/icons/Developer.png" alt=""></span>
-      <p>Students <span>35</span></p>
-    </div>
-  </div>
-    <p class="infos">
-      Back-end development involves building the server-side components of a website 
-      or application, handling data storage, business
-      logic, and server communication.
-    </p>
-    
-    <div class="card-footer">
-      <ul>
-        <li>
-         <span><img src="./images-and-icons/icons/Chat.png" alt=""></span>
-       <p> <span>300</span></p>
-        </li>
-       <li> <a href="" class="review">
-          Review content
-        </a>
-        <li><a href="" class="btn">Get started</a>
-      </ul>
-    </div>
-    </div>
-  </div>
-<div class="card-col">
-  <div class="img">
-    <img src="images-and-icons/front-end.jpg" width="300px" alt="">
-  </div>
-  <h3 class="card-head">Office Automation</h3>
-  <div class="card-body">
+      <div class="task-circle completed-task">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+        />
 
- <div class="lang">
-    <div class="lang2">
-      <span><img src="./images-and-icons/icons/Developer.png" alt=""></span>
-      <p>Students <span>130</span></p>
-    </div>
-  </div>
-    <p class="infos">
-      Office automation refers to the use of technology and software
-      to streamline and automate various administrative tasks administrative and 
-      processes within an office enviroment.
-    </p>
-    
-    <div class="card-footer">
-      <ul>
-        <li>
-        <span> <img src="./images-and-icons/icons/Chat.png" alt=""></span>
-       <p> <span>300</span></p>
-        </li>
-       <li> <a href="" class="review">
-          Review content
-        </a>
-        <li><a href="" class="btn">Get started</a>
-      </ul>
-    </div>
-    </div>
-  </div>
+        <div class="task-circle-tool-tip">Task 2</div>
+      </div>
 
+      <div class="task-circle completed-task">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+        />
+
+        <div class="task-circle-tool-tip">Task 3</div>
+      </div>
+
+      <div class="task-circle completed-task">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+        />
+
+        <div class="task-circle-tool-tip">Task 4</div>
+      </div>
+
+      <div class="task-circle completed-task">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+        />
+
+        <div class="task-circle-tool-tip">Task 5</div>
+      </div>
+
+      <div class="task-circle completed-task">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+        />
+
+        <div class="task-circle-tool-tip">Task 6</div>
+      </div>
+
+      <div class="task-circle">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+          style="display: none"
+        />
+
+        <div class="task-circle-tool-tip">Task 7</div>
+      </div>
+
+      <div class="task-circle">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+          style="display: none"
+        />
+
+        <div class="task-circle-tool-tip">Task 8</div>
+      </div>
+
+      <div class="task-circle">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+          style="display: none"
+        />
+
+        <div class="task-circle-tool-tip">Task 9</div>
+      </div>
+
+      <div class="task-circle">
+        <img
+          src="images-and-icons/icons/task-complete.svg"
+          alt="check-icon"
+          style="display: none"
+        />
+
+        <div class="task-circle-tool-tip">Task 10</div>
+      </div>
+
+      <div
+        class="progress-bar-in"
+        style="
+          background: linear-gradient(
+            to right,
+            var(--progress-color) 0%,
+            var(--progress-color) 60%,
+            var(--alt-color) 60%,
+            var(--alt-color) 100%
+          );
+        "
+      ></div>
     </div>
-  </main>
+  </div>
+  <h1>HTML</h1>
+  <ul class="frontend-stack-subhead">
+    <li>
+    <img src="./images-and-icons/icons/Sheets.svg" alt="">      
+        <p>Modules <span>10</span></p>
+     </li>   
+       <li>
+          <img src="./images-and-icons/icons/Tasklist.png"  alt="">
+          <p>Task <span>35</span></p>
+        </li>
+      
+    <li>
+    <img src="./images-and-icons/icons/Tasklist.png" alt="">      
+        <p>Tasks <span>150</span></p>
+     </li>   
+       <li>
+          <img src="./images-and-icons/icons/Comments.svg"  alt="">
+          <p>Comments <span>1k</span></p>
+        </li>
+    </ul>
+    <div class="frontend-stack-infos">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, 
+        necessitatibus soluta!
+         Quia doloribus provident excepturi quidem 
+        corrupti! Doloribus atque neque facilis beatae. 
+        Eligendi, voluptatibus esse. Sed est porro praesentium nesciunt?</p>
+     <a href="#">See all</a>
+      </div>
+      <div class="frontend-stack-heading">
+        <h2>Modules</h2>
+        <div class="add-delete">
+         <span id="Delete-module">
+          <img  src="./images-and-icons//icons/Delete.png" alt="">
+         </span>
+        <span id="showpopup">
+          <img src="./images-and-icons//icons/Plus Math.png" alt="">
+        </span>
+        </div>
+       </div>
+      <div class="modules-card-row">
+        <div class="modules-card">
+          <div class="card">
+            <h4>Introduction to HTML</h4>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+            <span> <img src="./images-and-icons/icons/Multiple Messages.png" alt="">      
+              </span>  
+              <p>10</p>
+                </div>
+                <div class="col">
+                  <span><img src="./images-and-icons/icons/FAQ.png" alt="">
+                  </span>
+                    <p>14</p>
+                </div>
+              </div>
+              <a href="">Re-do</a>
+            </div>
+          </div>
+        </div>
+        <div class="modules-card">
+          <div class="card">
+            <h4>HTML Tags</h4>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+            <span> <img src="./images-and-icons/icons/Multiple Messages.png" alt="">      
+              </span>  
+              <p>10</p>
+                </div>
+                <div class="col">
+                  <span><img src="./images-and-icons/icons/FAQ.png" alt="">
+                  </span>
+                    <p>14</p>
+                </div>
+              </div>
+              <a href="">Re-do</a>
+            </div>
+          </div>
+        </div>
+        <div class="modules-card">
+          <div class="card">
+            <h4>HTML Forms</h4>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+            <span> <img src="./images-and-icons/icons/Multiple Messages.png" alt="">      
+              </span>  
+              <p>10</p>
+                </div>
+                <div class="col">
+                  <span><img src="./images-and-icons/icons/FAQ.png" alt="">
+                  </span>
+                    <p>14</p>
+                </div>
+              </div>
+              <a href="">Re-do</a>
+            </div>
+          </div>
+        </div>
+        <div class="modules-card">
+          <div class="card">
+            <h4>HTML List</h4>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col">
+            <span> <img src="./images-and-icons/icons/Multiple Messages.png" alt="">      
+              </span>  
+              <p>10</p>
+                </div>
+                <div class="col">
+                  <span><img src="./images-and-icons/icons/FAQ.png" alt="">
+                  </span>
+                    <p>14</p>
+                </div>
+              </div>
+              <button class="redo-btn" >continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>
+<!-- ---pop-ups -->
+<div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+  
+    <form class="" id="popUp" action="">
+      <button id="closeBtn">
+        <img src="images-and-icons/close-icon.png" alt="" srcset="">
+      </button>
+        <div class="form link-popup">
+          <h1>Add Modules</h1>  
+          <br><br><br>
+            <h3>Title</h3>
+            <div class="inputfield">
+                <input type="text" name="" id="">
+                <div class="line"></div>
+            </div>
+            <div class="buttonfield">
+    
+                <button class="button">Submit</button>
+    
+            </div>
+        </div>
+    </form>
+    
+  </div>
+  <!-- --question section -->
     <div class="qa-section">
       <div class="qa-header">
         <p class="q-head">Q/A</p>
@@ -444,8 +554,9 @@
                 <img
                   src="images-and-icons/icons/Comments.svg"
                   alt="comment-icon"
-                />
-                <p>10</p>
+            <span>     />
+              </span>  
+              <p>10</p>
               </div>
             </div>
           </div>
@@ -465,24 +576,27 @@
                   <img
                     src="images-and-icons/icons/like.svg"
                     alt="comment-icon"
-                  />
-                  <p>10</p>
+              <span>     />
+                </span>  
+                <p>10</p>
                 </div>
 
                 <div class="comments">
                   <img
                     src="images-and-icons/icons/dislike.svg"
                     alt="comment-icon"
-                  />
-                  <p>10</p>
+              <span>     />
+                </span>  
+                <p>10</p>
                 </div>
 
                 <div class="comments">
                   <img
                     src="images-and-icons/icons/Comments.svg"
                     alt="comment-icon"
-                  />
-                  <p>10</p>
+              <span>     />
+                </span>  
+                <p>10</p>
                 </div>
               </div>
 
@@ -548,8 +662,9 @@
                 <img
                   src="images-and-icons/icons/Comments.svg"
                   alt="comment-icon"
-                />
-                <p>10</p>
+            <span>     />
+              </span>  
+              <p>10</p>
               </div>
             </div>
           </div>
@@ -557,5 +672,6 @@
       </div>
     </div>
     <script src="scripts/dashboard/main.js" type="module"></script>
+    <script src="scripts/popup.js"></script>
   </body>
 </html>
