@@ -1,5 +1,5 @@
 .pop-up{
-    backdrop-filter: blur(15px) ;
+    backdrop-filter: blur(5px) ;
     position: absolute ;
     left: 0 ;
     right: 0 ;
@@ -10,7 +10,7 @@
     display: flex ;
     flex-direction: column ;
     align-items: center ;
-    display: none ;
+    display: none;
 }
 
 .log-form{
@@ -63,7 +63,7 @@
     margin-top: 1.5rem ;
 }
 
-.close-button{
+.close-button,#closeBtn,#closeBtn1,#closeBtn2{
     background: none ;
     border: none ;
     cursor: pointer ;
@@ -71,13 +71,17 @@
     right: 1.5rem ;
     top: 1.5rem ;
 }
-
-.close-button img{
+#closeBtn img, #closeBtn1 img, #closeBtn2 img{
+    margin: -1.5rem;
+    margin-right: -3rem;
+    /* padding: 5px; */
+}
+.close-button img,#closeBtn img,#closeBtn1 img, #closeBtn2 img{
     width: 1.5rem ;
     transition: 0.6s ease-in-out;
 }
 
-.close-button img:hover{
+.close-button img:hover,#closeBtn img:hover, #closeBtn1 img:hover, #closeBtn2 img:hover{
     transform: translateY(0px) rotate(360deg) ;
     transition: 0.8s ease-in-out;
 }
@@ -152,5 +156,319 @@
     .pop-up{
         padding-top: 1rem ;
 
+    }
+}
+
+:root{
+    --inputclr:rgba(128, 128, 128, 0.355);
+    --dclr:white;
+    --bgclr:rgba(0, 0, 0, 0.781);
+    --lineclr: #2196F3;
+}
+.popup,#popup1,#popup2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 9999;
+   width: 70%;
+  }
+  
+  /* Styles for overlay */
+  .overlay {
+    backdrop-filter: blur(5px) ;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+form.cont-popup,form .form.link-popup,form.assign-card{
+    background-color: var(--bgclr);
+    color: var(--dclr);
+    width: 100%;
+    border-radius: 10px;
+    top: 10%;
+    left: 25%;
+    margin: 20px;
+   padding: 20px;
+}
+
+.hline{
+border: 1px solid gray;margin: 20px;
+
+}
+.form{
+    margin: 20px;
+}
+.form input{
+   
+    width: 100%;
+    min-height:30px;
+    background-color: var(--inputclr);
+    border: none;
+    color: var(--dclr);
+}
+.inputfield,.flex1 .inputfield{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--inputclr);
+    border-radius: 5px;
+    width: 100%;
+    padding: 1px;
+}
+.inputfield .line,.checkbox .line,.flex1 .inputfield .line{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color:var(--lineclr);
+}
+.form h3{
+    margin: 10px 0;
+}
+.form textarea{
+    background-color: var(--inputclr);
+    border: 1px solid var(--lineclr);
+    color: var(--dclr);
+    width: 100%;
+}
+form  button,.assignbtn button{
+    border-radius: 5px;
+    padding: 5px 30px;
+    margin: 10px 0;
+    /* width: 20%; */
+    font-size: large;
+    font-weight: 600;
+}
+form .buttonfield{
+    display: flex;
+    justify-content: space-between;
+}
+form .form button.button{
+    background-color:var(--lineclr);
+    color:var(--dclr);
+    border: 1px solid var(--call-to-action-color);
+}
+form .buttonfield span{
+    display: flex;
+    border: 1px solid var(--call-to-action-color);
+    background-color: var(--alt-color);
+    border-radius: 5px;
+    padding: 5px;
+    height:max-content;
+}
+form .buttonfield span img{
+    width: 20px;
+    height: 1.3rem;
+}
+form .buttonfield span:hover{
+    background-color: var(--lineclr);
+    cursor: pointer;
+}
+button.button:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+/* Assign to card */
+.assign-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.assign-body,.assign-body .infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infos .image {
+    margin: 0 30px;
+}
+.infos p{
+    margin: 30px;
+}
+.infos p span{
+    color: var(--inputclr);
+}
+.assignbtn,.form.link-popup .flexl .buttonfield {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1px 10px;
+}
+/* ------comments--- */
+.flex1{
+    display: flex;
+}
+.flex1 .buttonfield{
+    margin: -10px 5px;
+}
+.flex1 .inputfield input {
+    border: 1px solid var(--lineclr);
+}
+#popup1{
+    top: 45%;
+    left: 50%;
+    padding: 20px;
+    z-index: 9999;
+    width: 70%;
+    margin: 1.6rem;
+} 
+#popup1 .form.link-popup{
+    background-color: #383838;
+    padding: 0;
+}
+#popup1 #closeBtn1{
+    top: 2.5rem;
+    right: 3rem;
+}
+#popup1 .top-comment {
+    background-color:var(--alt-color);
+}
+form .form.link-popup.comm{
+    display: flex;
+}
+
+.form.link-popup.comm .left-form{
+    width: 50%;
+    text-align: justify;
+    padding: .5rem 1.5rem;
+    align-items: center;
+}
+.left-form .h-center{
+    text-align: center;
+    margin: 50% 0;
+}
+.form.link-popup.comm .right-form{
+   border-left: solid var(--alt-color) 1px;
+   padding: .5rem 0.3rem;
+   width: 50%;
+}
+.buttonfield.flex{
+    float: right;
+}
+.selectall{
+    float: right;
+    display: flex;
+}
+
+/* checkbox*/
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px; /* Add some bottom padding to create space for the border */
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid var(--inputclr);
+  width: 20px;
+  height: 15px;
+  overflow: hidden;
+  border-radius: 5px;
+
+}
+
+.checkbox-container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-bottom: 2px solid var(--lineclr); /* Add the bottom border */
+}
+
+.checkbox-container:hover input[type="checkbox"] ~ .checkmark {
+  border-color: #777; /* Change the border color on hover if desired */
+}
+
+.checkbox-container input[type="checkbox"]:checked ~ .checkmark {
+  border-color: #2196F3; /* Change the border color when checked if desired */
+}
+
+.checkbox-container .checkmark:before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input[type="checkbox"]:checked ~ .checkmark:before {
+  display: block;
+}
+
+.checkbox-container .checkmark:before {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--lineclr);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* !!!!!!!popup responsivennes !!!!!!!!*/
+@media screen and (max-width:900px){
+    .popup{
+        width: 100%;
+        left: 45%;
+    }
+    #popup1{
+        top: 45%;
+        left: 40%;
+        padding: 20px;
+        z-index: 9999;
+        width: 100%;
+        margin: 1.5rem 1.2rem;
+    }
+    form .form.link-popup.comm{
+        display: block;
+    }
+    .form.link-popup.comm .left-form,.form.link-popup.comm .right-form{
+        width: 100%;
+        border-left: none;
+    }
+    .left-form p {
+        /* display: none; */
+        color: red;
+        display: none;
+    }
+    .form.link-popup.comm .left-form .h-center{
+        margin: 0;
+    }
+}
+@media (min-width:700px) and (max-width:900px) {
+    #popup1{
+        left: 45%;
+    }
+}
+@media (min-width:900px) and (max-width:1024px) {
+    #popup1{
+        left: 45%;
+        width: 100vw;
+    }
+}
+@media (width:540px){
+    #popup1{
+        left: 43%;
+        top: 46%;
+    }
+}
+@media (width:280px){
+    #popup1{
+        left: 33%;
+        top: 45%;
+    }
+}
+@media (width:412px){
+    #popup1{
+        left: 36%;
+        top: 42%;
     }
 }
